@@ -1,0 +1,79 @@
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.*
+!.env.example
+odoo_pg_pass
+*.pem
+*.key
+
+# =========================
+# PostgreSQL Data
+# =========================
+data/postgres/
+data/postgres/**
+backups/
+*.dump
+*.sql
+*.sql.gz
+
+# =========================
+# Odoo Runtime Data
+# =========================
+filestore/
+sessions/
+*.log
+*.pid
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# IDE & Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.bak
+*.old
+*.orig
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# Odoo Custom Addons
+# =========================
+addons/**/__pycache__/
+addons/**/*.pyc
+addons/**/*.pyo
